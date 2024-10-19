@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:moniepoint_test/widgets/animationManager/tween_animators.dart';
-import 'package:user_profile_avatar/user_profile_avatar.dart';
 import 'package:moniepoint_test/app/third_page.dart';
 
 class TopBar extends StatefulWidget {

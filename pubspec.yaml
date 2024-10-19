@@ -30,7 +30,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  user_profile_avatar:
   gradient_slide_to_act:
   feather_icons:
   # The following adds the Cupertino Icons font to your application.

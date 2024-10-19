@@ -5,7 +5,6 @@ import 'package:moniepoint_test/widgets/count_animation.dart';
 import 'package:moniepoint_test/widgets/animationManager/expanding_rollout_animation.dart';
 import 'package:moniepoint_test/widgets/top_bar.dart';
 
-import 'package:user_profile_avatar/user_profile_avatar.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({Key? key}) : super(key: key);
@@ -326,7 +325,7 @@ class _LandingPageState extends State<LandingPage> with TickerProviderStateMixin
                   child:
                   ExpandingRolloutAnimation(
                     text: 'Gladkova St, 25 ',
-                    rollingWidth: 145 ,
+                    rollingWidth: 130 ,
                   )
               ),
             ],
@@ -363,7 +362,7 @@ class _LandingPageState extends State<LandingPage> with TickerProviderStateMixin
                       child:
                       ExpandingRolloutAnimation(
                         text: 'Monnify Ave, 25 ',
-                       rollingWidth: 145 ,
+                       rollingWidth: 130 ,
                       )
                   ),
                 ],
@@ -397,7 +396,7 @@ class _LandingPageState extends State<LandingPage> with TickerProviderStateMixin
                       child:
                       ExpandingRolloutAnimation(
                         text: 'Gubina St, 28 ',
-                       rollingWidth: 145,
+                       rollingWidth: 130,
                       )
                   ),
                 ],

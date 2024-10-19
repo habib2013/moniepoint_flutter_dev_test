@@ -29,29 +29,29 @@ class AppSearchBar extends StatelessWidget {
             child: TextFormField(
               controller: _controller,
               decoration: InputDecoration(
-                prefixIcon: Icon(FeatherIcons.search, size: 20),  // Adjust icon size
-                border: InputBorder.none,  // Removes the default underline
-                hintText: 'Search location...',  // Placeholder for better UX
-                contentPadding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),  // Padding for text
+                prefixIcon: Icon(FeatherIcons.search, size: 20),
+                border: InputBorder.none,
+                hintText: 'Search location...',
+                contentPadding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
               ),
             ),
           ),
         ),
         
         
-        SizedBox(width: 15),  // Reduced width for a tighter layout
+        SizedBox(width: 15),
         transformWidget(
           transform_child: Container(
             width: 40,
             height: 40,
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(20),  // More consistent rounding
+              borderRadius: BorderRadius.circular(20),
               boxShadow: [
                 BoxShadow(color: Colors.grey.withOpacity(0.2), blurRadius: 5, spreadRadius: 2),
               ],
             ),
-            child: Icon(FeatherIcons.sliders, size: 20),  // Adjust icon size
+            child: Icon(FeatherIcons.sliders, size: 20),
           ),
         ),
       ],

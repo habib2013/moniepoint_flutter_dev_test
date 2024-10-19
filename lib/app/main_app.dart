@@ -25,13 +25,13 @@ class _HomeState extends State<Home> {
     Container(color: Colors.purple,child: Center(child: Text('Fifth Screen',style: TextStyle(color: Colors.white),),)),
   ];
 
-  bool _isBottomNavVisible = false; // To track if the bottom navigation bar is visible
+  bool _isBottomNavVisible = false;
 
 
   @override
   void initState() {
     super.initState();
-    // Start the slide-in animation after a delay of 1 second
+
     Future.delayed(Duration(seconds: 1), () {
       setState(() {
         _isBottomNavVisible = true;
@@ -48,17 +48,17 @@ class _HomeState extends State<Home> {
             child: _pages[_currentIndex],
           ),
           AnimatedPositioned(
-            duration: Duration(seconds: 2), // Slide-in animation duration
-            curve: Curves.easeInOut, // Use easeInOut curve for smooth animation
+            duration: Duration(seconds: 2),
+            curve: Curves.easeInOut,
             bottom: _isBottomNavVisible ? 20 : -kBottomNavigationBarHeight - 16,
-            left: MediaQuery.of(context).size.width * 0.15, // 10% margin from left
-            right: MediaQuery.of(context).size.width * 0.15, // 10% margin from right
+            left: MediaQuery.of(context).size.width * 0.15,
+            right: MediaQuery.of(context).size.width * 0.15,
             child: AnimatedContainer(
-              duration: Duration(seconds: 3), // Slide-in animation duration
-              width: MediaQuery.of(context).size.width * 0.81, // 80% width
+              duration: Duration(seconds: 3),
+              width: MediaQuery.of(context).size.width * 0.81,
               height: kBottomNavigationBarHeight + 16,
               decoration: BoxDecoration(
-                color: Color(0xff2b2b2b), // Background color for the bottom nav
+                color: Color(0xff2b2b2b),
                 borderRadius: BorderRadius.circular(100),
                 boxShadow: [
                   BoxShadow(

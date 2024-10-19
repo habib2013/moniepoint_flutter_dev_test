@@ -38,7 +38,7 @@ class _LandingPageState extends State<LandingPage> with TickerProviderStateMixin
 
 
   inAppSlideAnimation() {
-    // Initialize the first AnimationController
+
     _controller = AnimationController(
       duration: const Duration(seconds: 2),
       vsync: this,
@@ -51,7 +51,7 @@ class _LandingPageState extends State<LandingPage> with TickerProviderStateMixin
 
     _controller.forward();
 
-    // Initialize other AnimationControllers
+
     controller = AnimationController(
       vsync: this,
       duration: Duration(seconds: 2),
@@ -326,7 +326,6 @@ class _LandingPageState extends State<LandingPage> with TickerProviderStateMixin
                   child:
                   ExpandingRolloutAnimation(
                     text: 'Gladkova St, 25 ',
-                  //  rollingWidth: getMediaQueryWidth(context,0.33) ,
                     rollingWidth: 145 ,
                   )
               ),
@@ -353,7 +352,7 @@ class _LandingPageState extends State<LandingPage> with TickerProviderStateMixin
                       borderRadius: BorderRadius.circular(30),
                       child: Image.asset(
                         'assets/images/003.webp',
-                        fit: BoxFit.cover, // Ensure the image fills the container
+                        fit: BoxFit.cover,
                       ),
                     ),
                   ),
@@ -364,8 +363,7 @@ class _LandingPageState extends State<LandingPage> with TickerProviderStateMixin
                       child:
                       ExpandingRolloutAnimation(
                         text: 'Monnify Ave, 25 ',
-                       // rollingWidth: getMediaQueryWidth(context,0.33) ,
-                        rollingWidth: 145 ,
+                       rollingWidth: 145 ,
                       )
                   ),
                 ],
@@ -399,8 +397,7 @@ class _LandingPageState extends State<LandingPage> with TickerProviderStateMixin
                       child:
                       ExpandingRolloutAnimation(
                         text: 'Gubina St, 28 ',
-                      //  rollingWidth: getMediaQueryWidth(context,0.33),
-                        rollingWidth: 145,
+                       rollingWidth: 145,
                       )
                   ),
                 ],

@@ -19,37 +19,20 @@ class _ExpandingRolloutAnimationState extends State<ExpandingRolloutAnimation>
   void initState() {
     super.initState();
 
-    // Initialize the animation controller
-    // _controller = AnimationController(
-    //   duration: Duration(seconds: 5), // Adjust the duration for speed
-    //   vsync: this,
-    // );
-    //
-    // // Width animation from 0 (collapsed) to desired full width
-    // _widthAnimation = Tween<double>(begin: 0.0, end: widget!.rollingWidth ).animate(CurvedAnimation(
-    //   parent: _controller,
-    //   curve: Curves.easeInOut, // Adjust the curve for smoothness
-    // ));
-    //
-    // // Start the animation
-    // _controller.forward();
 
-    // Initialize the animation controller but delay the forward action
     _controller = AnimationController(
       duration: Duration(seconds: 5), // Adjust the duration for speed
       vsync: this,
     );
 
-    // Width animation from 0 (collapsed) to desired full width
+
     _widthAnimation = Tween<double>(begin: 0.0, end: widget.rollingWidth).animate(
       CurvedAnimation(
         parent: _controller,
         curve: Curves.easeInOut, // Adjust the curve for smoothness
       ),
     );
-
-    // Delay the animation until the widget is built and media query size is properly calculated
-    WidgetsBinding.instance.addPostFrameCallback((_) {
+   WidgetsBinding.instance.addPostFrameCallback((_) {
       _controller.forward();
     });
   }
@@ -101,9 +84,9 @@ class _ExpandingRolloutAnimationState extends State<ExpandingRolloutAnimation>
                 )
                     : null,
               ),
-              // Icon Container (stacked on the left)
+
               Positioned(
-                left: _widthAnimation.value - 10, // Adjust this value to position the icon
+                left: _widthAnimation.value - 10,
                 child: Container(
                   padding: EdgeInsets.symmetric(horizontal: 9, vertical: 9),
                   decoration: BoxDecoration(

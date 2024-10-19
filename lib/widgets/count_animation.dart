@@ -21,7 +21,7 @@ class _CountAnimationState extends State<CountAnimation> {
   void _startCountAnimation() {
     Timer.periodic(Duration(milliseconds: 10), (timer) {
       if (!mounted) {
-        timer.cancel(); // Cancel the timer if the widget is not mounted
+        timer.cancel();
         return;
       }
 

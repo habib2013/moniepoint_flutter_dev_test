@@ -4,27 +4,17 @@
 
 This project is a mobile application that implements the design from a Dribbble design project for a Real Estate App. The goal is to accurately translate the design into a functional Flutter application, including scroll behaviors, effects, and animations.
 
-## Screenshots
-
-| ![Screenshot 1](assets/images/Screenshot1.png) | ![Screenshot 2](assets/images/Screenshot2.png) |
-| ---------------------------------------------- | ---------------------------------------------- |
-| Screenshot 1                                   | Screenshot 2                                   |
-
-## Video Demo
-
-- Video Demo: [Real Estate App Demo](https://screenapp.io/app/#/shared/e538972c-1016-4e9a-ad7a-eb057b46a691)
 
 ## Download App
 
-- Download Link: [App Uploaded to google drive](https://drive.google.com/file/d/1DrETZcWQrYf50EiV3gPyQUPteBw3bgy3/view?usp=sharing
-  )
+- Download Link: [App Uploaded to google drive]()
 
 ## Features
 
-- Home Page
-- Property Details Page (Not available)
-- Search Functionality (Not available)
-- Interactive Map View
+- Search Page
+- Messaging Screen (Not available)
+- Home Page 
+- Liked/ Wishlists (Not available)
 - User Profile Management (Not available)
 
 ## Technologies Used
